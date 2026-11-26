@@ -1,0 +1,8 @@
+tts/
+work/
+out/
+__pycache__/
+tts
+work
+out
+make.log
