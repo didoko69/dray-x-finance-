@@ -21,5 +21,5 @@ Upload rhythm: every day (one long-form video). Length 9–13 min (1,350–1,900
 - Keep bottom-right corner empty. Check thumb_small.jpg (320x180) is still readable.
 
 ## Past videos (do not repeat topics)
-Tulip Mania · Enron · Bernie Madoff · Lehman Brothers (+ short) · FTX · WeWork · GameStop short squeeze · Credit card debt · Lifestyle inflation (x2) · 1MDB · Wirecard
+Tulip Mania · Enron · Bernie Madoff · Lehman Brothers (+ short) · FTX · WeWork · GameStop short squeeze · Credit card debt · Lifestyle inflation (x2) · 1MDB · Wirecard (posted 2026-11-26)
 See TOPICS.md for the backlog and EPISODES.md for the automated log.
