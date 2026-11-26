@@ -9,7 +9,7 @@ Owner: Daniel. He does NOT review before posting — you are the quality and acc
 3. RESEARCH (mandatory): WebSearch + WebFetch at least 3 independent reputable sources (news agencies, court/regulator documents, major papers, Wikipedia only as a pointer).
    Check the CURRENT status (court cases, people, companies) as of today. Write episodes/<slug>/sources.md with every URL used.
 4. Write episodes/<slug>/shots.py (copy the helper block from episodes/wirecard/shots.py). 1,350–1,900 words, 4–6 chapters, sourced numbers only, allegations as allegations.
-   Thumbnail: follow THUMBNAILS.md (AI-illustrated via Zapier Gemini; save the prompt in episodes/<slug>/thumbnail.md). Also write episodes/<slug>/thumb.json (engine fallback) and package.json {"title","description","tags","pinned_comment"}.
+   Thumbnail: follow THUMBNAILS.md — write episodes/<slug>/pro_thumb.json; after make.sh run `python3 tools/pro_thumb.py <slug>` (overwrites out/<slug>/thumbnail.jpg) and check it full size and at 320x180. Also keep a simple episodes/<slug>/thumb.json (make.sh needs it) and package.json {"title","description","tags","pinned_comment"}.
    Title pattern: "<Topic> Explained: <hook with a number>" (≤ 70 chars). Description: 2-line hook, summary, chapters, sources note, "new money stories every day", 3 hashtags. 12–18 tags.
 5. Frame check (ENGINE.md "Checking before the full render"): look at ~12 frames incl. every card type you used. Fix overflowing text, hidden faces, empty frames.
 6. `bash tools/make.sh <slug>` (~30–45 min). Check out/<slug>/video.mp4: duration 8.5–14 min, extract 6 frames with ffmpeg and look at them, check work/<slug>/thumb_small.jpg is readable.
