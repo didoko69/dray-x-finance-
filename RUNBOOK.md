@@ -22,8 +22,11 @@ Owner: Daniel. He does NOT review before posting — you are the quality and acc
    git remote add origin https://github.com/didoko69/dray-x-finance- && git push -q -f origin media
    curl -sI https://raw.githubusercontent.com/didoko69/dray-x-finance-/media/video.mp4 | head -1   # must be 200 (wait ~10 s if 404)
    ```
-9. Upload with Zapier YouTube upload_video using connection_id = the Dray x finance connection (see ZAPIER.md — NEVER the Divine survival connection):
-   title, description, video=https://raw.githubusercontent.com/didoko69/dray-x-finance-/media/video.mp4, thumbnail=…/media/thumbnail.jpg,
+9. Upload with Zapier YouTube upload_video using the Dray x finance connection — NEVER the Divine survival one (0215c091-44e6-8b0b-ad3e-0c5621e4c474).
+   Find it: list_zapier_connections(YouTubeV4CLIAPI); for each connection run find_channel (no params, connection_id=<id>) and pick the one whose channel id is
+   UCkjJPV_cO6KI9ujVdd4tBDw. Write that id into ZAPIER.md. If NO connection owns that channel: do not upload — email Daniel the finished video link
+   (https://raw.githubusercontent.com/didoko69/dray-x-finance-/media/video.mp4), thumbnail link and the package text, and remind him to connect Dray x finance in Zapier.
+   Parameters: title, description, video=https://raw.githubusercontent.com/didoko69/dray-x-finance-/media/video.mp4, thumbnail=…/media/thumbnail.jpg,
    tags, privacy_status "public", category_id "27" (Education), made_for_kids "false", default_language "en", notify_subscribers "true".
    Verify the response channelId == UCkjJPV_cO6KI9ujVdd4tBDw. If the thumbnail didn't apply, use upload_video_thumbnail with the same connection_id.
 10. Update EPISODES.md (date, slug, title, video id/URL) and push.
