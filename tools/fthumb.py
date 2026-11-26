@@ -10,7 +10,7 @@ subprocess.run(['cp', 'engine/th2.js', W], check=True); subprocess.run(['node', 
 im = Image.open(f'{W}/th0.png').convert('RGB')
 im = ImageEnhance.Brightness(ImageEnhance.Color(im).enhance(cfg.get('sat', .8))).enhance(cfg.get('dim', .8))
 d = ImageDraw.Draw(im)
-FA = '/usr/share/fonts/truetype/google-fonts/ofl/anton/Anton-Regular.ttf'
+FA = "fonts/Anton-Regular.ttf"
 FA = FA if os.path.exists(FA) else '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
 x = cfg.get('x', 60)
 d.text((x, 40), cfg['big'], font=ImageFont.truetype(FA, cfg.get('big_size', 260)), fill=cfg.get('big_col', '#f2c418'), stroke_width=16, stroke_fill='black')

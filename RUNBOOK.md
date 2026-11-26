@@ -2,14 +2,14 @@
 
 Owner: Daniel. He does NOT review before posting — you are the quality and accuracy gate. If anything fails or a fact can't be verified, do not upload; email him.
 
-1. Setup: repo at /home/claude/dray-x-finance-. `cd` there and run `bash tools/setup.sh`.
+1. Setup: repo at /home/claude/dray-x-finance-. `cd` there and run `bash tools/setup.sh` and install the fonts: `mkdir -p /usr/share/fonts/truetype/google-fonts/ofl/anton && cp fonts/Anton-Regular.ttf /usr/share/fonts/truetype/google-fonts/ofl/anton/`.
 2. Pick the topic: read CHANNEL.md (format + accuracy rules + past videos), TOPICS.md (backlog), EPISODES.md (posted log), PERFORMANCE.md (latest "Apply next").
    Take the first unused backlog topic unless PERFORMANCE.md says otherwise. Slug = short lowercase name (e.g. theranos).
    Before writing, check the channel's latest uploads (Zapier YouTube find_video, channel_id UCkjJPV_cO6KI9ujVdd4tBDw, order date) so you never repeat a topic.
 3. RESEARCH (mandatory): WebSearch + WebFetch at least 3 independent reputable sources (news agencies, court/regulator documents, major papers, Wikipedia only as a pointer).
    Check the CURRENT status (court cases, people, companies) as of today. Write episodes/<slug>/sources.md with every URL used.
 4. Write episodes/<slug>/shots.py (copy the helper block from episodes/wirecard/shots.py). 1,350–1,900 words, 4–6 chapters, sourced numbers only, allegations as allegations.
-   Also episodes/<slug>/thumb.json (see CHANNEL.md thumbnails) and package.json {"title","description","tags","pinned_comment"}.
+   Thumbnail: follow THUMBNAILS.md (AI-illustrated via Zapier Gemini; save the prompt in episodes/<slug>/thumbnail.md). Also write episodes/<slug>/thumb.json (engine fallback) and package.json {"title","description","tags","pinned_comment"}.
    Title pattern: "<Topic> Explained: <hook with a number>" (≤ 70 chars). Description: 2-line hook, summary, chapters, sources note, "new money stories every day", 3 hashtags. 12–18 tags.
 5. Frame check (ENGINE.md "Checking before the full render"): look at ~12 frames incl. every card type you used. Fix overflowing text, hidden faces, empty frames.
 6. `bash tools/make.sh <slug>` (~30–45 min). Check out/<slug>/video.mp4: duration 8.5–14 min, extract 6 frames with ffmpeg and look at them, check work/<slug>/thumb_small.jpg is readable.
