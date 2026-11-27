@@ -1,6 +1,6 @@
 # Topic backlog (pick the first unused; mix ~5 scandals/collapses with ~2 personal-money explainers per week)
 Scandals / collapses / manias:
-- Theranos: the $9 billion blood test that never worked
+- Theranos: the $9 billion blood test that never worked — USED 2026-11-27
 - Long-Term Capital Management: when Nobel winners almost broke Wall Street
 - Silicon Valley Bank: the 48-hour bank run (2023)
 - Archegos: how one man lost $20 billion in two days
