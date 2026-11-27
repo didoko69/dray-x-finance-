@@ -5,7 +5,7 @@ If thumbs/<slug>.jpg (or .png) exists, that is Daniel's thumbnail: use it (resiz
 
 | Date | Slug | Title | Thumbnail text | Status |
 |------|------|-------|----------------|--------|
-| Fri 2026-11-27 | theranos | Theranos Explained: The $9 Billion Blood Test That Never Worked | "$9B" / "FAKE" | planned |
+| Fri 2026-11-27 | theranos | Theranos Explained: The $9 Billion Blood Test That Never Worked | "$9B" / "FAKE" | posted (v0MgYHzTsMc) |
 | Sat 2026-11-28 | svb | Silicon Valley Bank Explained: The $42 Billion Bank Run | "$42B" / "IN 1 DAY" | planned |
 | Sun 2026-11-29 | compound-interest | Compound Interest Explained: Why Starting at 20 Beats Starting at 30 | "START AT 20" / "NOT 30" | planned |
 | Mon 2026-11-30 | archegos | Archegos Explained: How One Man Lost $20 Billion in Two Days | "$20B" / "2 DAYS" | planned |
